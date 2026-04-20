@@ -390,7 +390,7 @@ class MainApp extends StatelessWidget {
             const SizedBox(height: 15),
 
             //----------------------------------------------------------------------------------
-            //lo que toca ahcer feo
+            //lo que toca hacer de dani
             //_---------------------------------------------------------------------------------
             const SizedBox(height: 15),
 
@@ -486,7 +486,7 @@ class MainApp extends StatelessWidget {
             const SizedBox(height: 15),
 
             //----------------------------------------------------------------------------------
-            //lo que toca ahcer feo
+            //lo que toca hacer de dani
             //_---------------------------------------------------------------------------------
             const SizedBox(height: 15),
 
