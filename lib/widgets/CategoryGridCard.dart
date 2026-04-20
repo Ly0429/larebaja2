@@ -6,7 +6,7 @@ class CategoryGridCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      // Mismo estilo que tus otras cards
+      
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
@@ -16,7 +16,7 @@ class CategoryGridCard extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         child: GridView.count(
           shrinkWrap: true, // Para que no de error dentro del ListView
-          physics: const NeverScrollableScrollPhysics(), // La tarjeta no scrollea, scrollea el body
+          physics: const NeverScrollableScrollPhysics(), 
           crossAxisCount: 3, // 3 círculos por fila
           mainAxisSpacing: 25,
           crossAxisSpacing: 10,
