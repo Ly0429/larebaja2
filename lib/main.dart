@@ -343,7 +343,7 @@ class MainApp extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(width: 10), // Espacio entre botones
+                  const SizedBox(width: 10),
                   // BOTÓN 2
                   Container(
                     height: 45,
