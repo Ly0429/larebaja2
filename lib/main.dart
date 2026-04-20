@@ -391,19 +391,8 @@ class MainApp extends StatelessWidget {
             const SizedBox(height: 15),
 
             //----------------------------------------------------------------------------------
-
-            // Título de la sección
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Text(
-                "Oferta destacada",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-            ),
-
             const SizedBox(height: 10),
 
-            // AQUÍ INSERTAMOS TU CARTA DE PRODUCTO
             const Center(child: ProductCard()),
 
             //_---------------------------------------------------------------------------------
@@ -499,8 +488,80 @@ class MainApp extends StatelessWidget {
 
             const SizedBox(height: 15),
 
+            // Este es el contenedor del scroll para los botones
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  // BOTÓN 1
+                  Container(
+                    height: 45,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 240, 3, 3),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Súper Descuentos",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(width: 10),
+                  // BOTÓN 2
+                  Container(
+                    height: 45,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 228, 227, 227),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Ofertas",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 119, 119, 119),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(width: 10),
+
+                  // BOTÓN 3
+                  Container(
+                    height: 45,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 228, 227, 227),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Más Vendidas",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 119, 119, 119),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
             //----------------------------------------------------------------------------------
-            //lo que toca hacer de dani
+            const SizedBox(height: 10),
+
+            const Center(child: ProductCard()),
+
             //_---------------------------------------------------------------------------------
             const SizedBox(height: 15),
             Text(
