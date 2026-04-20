@@ -397,7 +397,7 @@ class MainApp extends StatelessWidget {
             // Contenedor para el scroll horizontal
             SingleChildScrollView(
               scrollDirection:
-                  Axis.horizontal, // <--- ESTO permite scrolear a la derecha
+                  Axis.horizontal, // 
               padding: const EdgeInsets.symmetric(
                 horizontal: 16,
               ), // Espacio inicial
