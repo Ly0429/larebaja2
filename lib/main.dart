@@ -3,6 +3,7 @@ import 'package:larebaja2/widgets/PromoCard.dart';
 import 'package:larebaja2/widgets/CategoryGridCard.dart';
 import 'package:larebaja2/widgets/BrandCard.dart';
 import 'package:larebaja2/widgets/StoreCircleCard.dart';
+import 'package:larebaja2/widgets/productcard.dart';
 
 void main() {
   runApp(const MainApp());
@@ -390,14 +391,27 @@ class MainApp extends StatelessWidget {
             const SizedBox(height: 15),
 
             //----------------------------------------------------------------------------------
-            //lo que toca hacer de dani
+
+            // Título de la sección
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                "Oferta destacada",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ),
+
+            const SizedBox(height: 10),
+
+            // AQUÍ INSERTAMOS TU CARTA DE PRODUCTO
+            const Center(child: ProductCard()),
+
             //_---------------------------------------------------------------------------------
             const SizedBox(height: 15),
 
             // Contenedor para el scroll horizontal
             SingleChildScrollView(
-              scrollDirection:
-                  Axis.horizontal, // 
+              scrollDirection: Axis.horizontal, //
               padding: const EdgeInsets.symmetric(
                 horizontal: 16,
               ), // Espacio inicial
@@ -489,7 +503,6 @@ class MainApp extends StatelessWidget {
             //lo que toca hacer de dani
             //_---------------------------------------------------------------------------------
             const SizedBox(height: 15),
-
             Text(
               "Marcas Destacadas",
               textAlign: TextAlign.center,
@@ -547,9 +560,13 @@ class MainApp extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      StoreCircleCard(logoUrl: 'https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol/es_CO/dolex-logo/New-Beacon-Dolex_high_res.png?auto=format'),
                       StoreCircleCard(
-                        logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4-6zxIXHTZ4dmBBT1h4K2Fpp0Oiz1RToUw&s',
+                        logoUrl:
+                            'https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol/es_CO/dolex-logo/New-Beacon-Dolex_high_res.png?auto=format',
+                      ),
+                      StoreCircleCard(
+                        logoUrl:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4-6zxIXHTZ4dmBBT1h4K2Fpp0Oiz1RToUw&s',
                       ),
                     ],
                   ),
@@ -558,9 +575,13 @@ class MainApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       StoreCircleCard(
-                        logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYhIZkeLOeXJGev2uiVcY3pHJmwyCqCWUqA&s',
+                        logoUrl:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYhIZkeLOeXJGev2uiVcY3pHJmwyCqCWUqA&s',
                       ),
-                      StoreCircleCard(logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHwL0vSAnjaTn1F_8AMFCv8Qf0C-Rl4GzrKQ&s'),
+                      StoreCircleCard(
+                        logoUrl:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHwL0vSAnjaTn1F_8AMFCv8Qf0C-Rl4GzrKQ&s',
+                      ),
                     ],
                   ),
                 ],
